@@ -2,9 +2,9 @@
 
 ## Setup
 
-1. Fork the [mastery-curriculum repository](https://github.com/makersacademy/mastery-curriculum).
+1. Fork this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
 
-2. Add @makers-dev as a collaborator on the mastery-curriculum repository on GitHub.
+2. Add @makers-dev as a collaborator on your mastery-quizzes fork on GitHub.
 
 3. Send the link in the "Copy Invite Link" drop-down on the collaborators page to @maryrosecook on Slack.
 
