@@ -4,25 +4,21 @@
 
 1. Fork this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
 
-2. Add @makers-dev as a collaborator on your mastery-quizzes fork on GitHub.
-
-3. Send the link in the "Copy Invite Link" drop-down on the collaborators page to @maryrosecook on Slack.
-
-4. Make sure you use Ruby version `2.4.1`.  To check your Ruby version, run the command below.
+2. Make sure you use Ruby version `2.4.1`.  To check your Ruby version, run the command below.
 
 ```
 $ ruby -v
 ```
 
-5. If required, use [RVM](https://rvm.io/) to install version `2.4.1`.
+3. If required, use [RVM](https://rvm.io/) to install version `2.4.1`.
 
-6. Install bundler.  To do this, run:
+4. Install bundler.  To do this, run:
 
 ```
 $ gem install bundler
 ```
 
-7. Install the gems required by this repository. To do this, run:
+5. Install the gems required by this repository. To do this, run:
 
 ```
 $ cd path/to/root/of/this/repo
