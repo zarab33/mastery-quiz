@@ -20,8 +20,10 @@ describe Api do
                 quiz_number: "1"})
         .and_return(request)
 
+      expect(report).to receive(:to_s).and_return("API result")
       expect(described_class.get_quiz(student_quiz, api_request_class))
-        .to eq(report)
+        .to eq("API result" +
+               "\nNow use `git pull` to get the quiz")
     end
   end
 
@@ -36,9 +38,10 @@ describe Api do
                 quiz_number: "1"})
         .and_return(request)
 
+      expect(report).to receive(:to_s).and_return("API result")
       expect(described_class.submit_and_verify_quiz_answers(
                student_quiz, api_request_class))
-        .to eq(report)
+        .to eq("API result")
     end
   end
 end
