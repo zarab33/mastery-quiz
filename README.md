@@ -93,6 +93,8 @@ $ rake submit_and_verify_quiz_answers github-username chapter-number quiz-number
 $ (e.g. rake submit_and_verify_quiz_answers timmydev 1 1)
 ```
 
+* If you get a confusing response when you run this command, just Slack @maryrosecook for help!
+
 ### Get a quiz
 
 * You can only get a quiz after you've successfully submitted and verified answers for the previous quiz.
@@ -102,3 +104,5 @@ $ cd path/to/root/of/repo
 $ rake get_quiz githubusername chapter-number quiz-number
 $ (e.g. rake get_quiz timmydev 1 1)
 ```
+
+* If you get a confusing response when you run this command, just Slack @maryrosecook for help!
