@@ -75,6 +75,8 @@ $ cd chapter1/quiz1
 $ rspec
 ```
 
+* In order to be judged correct, your code must pass all the automated tests for the quiz.
+
 ### 2. Commit and push your answers
 
 * Use git to commit and push your answers to your GitHub repo.
@@ -93,6 +95,7 @@ $ rake submit_and_verify_quiz_answers github-username chapter-number quiz-number
 $ (e.g. rake submit_and_verify_quiz_answers timmydev 1 1)
 ```
 
+* In order to be judged correct, your code must 100% of the automated tests for the quiz.
 * If you get a confusing response when you run this command, just Slack @maryrosecook for help!
 
 ### Get a quiz
