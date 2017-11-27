@@ -6,7 +6,7 @@
 
 2. Send @maryrosecook a message on Slack to tell her that you've forked the repo.  (She needs to set you up on the admin system.)
 
-3. Clone the repo to your computer.
+3. Clone your fork to your computer.
 
 4. Make sure you use Ruby version `2.4.1`.  To check your Ruby version, run the command below.
 
