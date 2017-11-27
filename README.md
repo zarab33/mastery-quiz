@@ -6,21 +6,23 @@
 
 2. Send @maryrosecook a message on Slack to tell her that you've forked the repo.  (She needs to set you up on the admin system.)
 
-3. Make sure you use Ruby version `2.4.1`.  To check your Ruby version, run the command below.
+3. Clone the repo to your computer.
+
+4. Make sure you use Ruby version `2.4.1`.  To check your Ruby version, run the command below.
 
 ```
 $ ruby -v
 ```
 
-4. If required, use [RVM](https://rvm.io/) to install version `2.4.1`.
+5. If required, use [RVM](https://rvm.io/) to install version `2.4.1`.
 
-5. Install bundler.  To do this, run:
+6. Install bundler.  To do this, run:
 
 ```
 $ gem install bundler
 ```
 
-6. Install the gems required by this repository. To do this, run:
+7. Install the gems required by this repository. To do this, run:
 
 ```
 $ cd path/to/root/of/this/repo
