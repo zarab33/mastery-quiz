@@ -29,6 +29,8 @@ $ cd path/to/root/of/this/repo
 $ bundle install
 ```
 
+8. Note that your clone will not have any quizzes in it, yet.  When you've completed a chapter, you can get a quiz by following the [instructions below](#instructions).
+
 ## Instructions
 
 1. Work through the numbered chapters (beginning with `chapter1`).
