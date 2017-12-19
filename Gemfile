@@ -9,6 +9,7 @@ gem "rake"
 gem "httparty"
 gem "safe_ruby"
 gem "rubocop", '0.52.0'
+gem 'mastery_answer_code_quality', :git => 'https://github.com/makersacademy/mastery_answer_code_quality.git'
 
 group :test do
   gem "rspec"
