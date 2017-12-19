@@ -1,6 +1,7 @@
 require "rubocop_execution"
 
 describe RubocopExecution do
+  let :rubocop_config_path { double(:rubocop_config_path) }
   let :answer_location { double(:answer_location) }
   let :open_3_class { double(:open_3_class) }
 
@@ -8,14 +9,19 @@ describe RubocopExecution do
     it "runs Rubocop on passed answer_location path using `Open3.capture3`" do
       expect(answer_location).to receive(:path).and_return("answer path")
       expect(open_3_class)
-        .to receive(:capture3).with("rubocop", "answer path")
+        .to receive(:capture3).with("rubocop",
+                                    "answer path",
+                                    "-c",
+                                    rubocop_config_path)
 
-      described_class.new(answer_location, open_3_class)
+      described_class.new(rubocop_config_path, answer_location, open_3_class)
     end
   end
 
   describe "#successful?" do
-    subject { described_class.new(answer_location, open_3_class) }
+    subject { described_class.new(rubocop_config_path,
+                                  answer_location,
+                                  open_3_class) }
     let :status { double(:status) }
 
     it "calls `success?` on status and returns result" do
@@ -29,7 +35,9 @@ describe RubocopExecution do
   end
 
   describe "#problems" do
-    subject { described_class.new(answer_location, open_3_class) }
+    subject { described_class.new(rubocop_config_path,
+                                  answer_location,
+                                  open_3_class) }
     let :problems { double(:problems) }
 
     it "returns problems returned by capture3" do
