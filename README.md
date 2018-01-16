@@ -1,5 +1,9 @@
 # Mastery quizzes
 
+* [Setup](#setup)
+* [How to work through the quizzes](#how-to-work-through-the-quizzes)
+* [How to complete a quiz](#how-to-complete-a-quiz)
+
 ## Setup
 
 1. Fork this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
@@ -31,23 +35,41 @@ $ bundle install
 
 8. Note that your clone will not have any quizzes in it, yet.  When you've completed a chapter, you can get a quiz by following the [instructions below](#instructions).
 
-## Instructions
+## How to work through the quizzes
 
 1. Work through the numbered chapters (beginning with `chapter1`).
 
 2. Work through a chapter.
 
-3. When you've absorbed the content of the chapter thoroughly, [get the quiz](#get-a-quiz).
+3. When you've absorbed the content of the chapter thoroughly, [get and complete the quiz](#how-to-complete-a-quiz).
 
-4. Complete the quiz.  Instructions [here](#how-to-complete-a-quiz).
+4. If you get stuck and can't complete a quiz, contact @maryrosecook on Slack and she give you feedback to help you learn what you need to complete the quiz.
 
-5. If you get stuck and can't complete a quiz, contact @maryrosecook on Slack and she give you feedback to help you learn what you need to complete the quiz.
-
-6. Once you have submitted your quiz answers, and your answers have been verified as correct, continue to the next chapter.
+5. Once you have submitted your quiz answers, and your answers have been verified as correct, continue to the next chapter.
 
 Your aim is to get through all the chapters, but the most important thing for your learning is to only move on from a chapter once you've completed the quiz.
 
 ## How to complete a quiz
+
+1. [Get the quiz](#1-get-the-quiz).
+2. [Write code to answer the quiz questions](#2-write-code-to-answer-the-quiz-questions).
+3. [Check that your answers pass the automated tests](#3-check-that-your-answers-pass-the-automated-tests).
+4. [Commit and push your answers](#commit-and-push-your-answers).
+5. [Submit and verify your answers](#submit-and-verify-your-answers).
+
+### 1. Get the quiz
+
+* You can only get a quiz after you've successfully submitted and verified answers for the previous quiz.
+
+```
+$ cd path/to/root/of/repo
+$ rake get_quiz [github-username] [chapter-number] [quiz-number]
+$ (e.g. rake get_quiz timmy-the-developer 1 1)
+```
+
+* If you get a confusing response when you run this command, just Slack @maryrosecook for help!
+
+### 2. Write code to answer the quiz questions
 
 * Each question is in a separate file e.g. `chapter1/quiz1/question_1.rb`.
 
@@ -63,7 +85,7 @@ Your aim is to get through all the chapters, but the most important thing for yo
 
 * You can run the question file like a normal ruby program `e.g. ruby question_1.rb`.
 
-### 1. Check that your answers pass the automated tests
+### 3. Check that your answers pass the automated tests
 
 * To check your answer for a question:
 
@@ -81,35 +103,18 @@ $ rspec
 
 * In order to be judged correct, your code must pass all the automated tests for the quiz.
 
-### 2. Commit and push your answers
+### 4. Commit and push your answers
 
-* Use git to commit and push your answers to your GitHub repo.
+* Use Git to commit your answers to your local Git repo.
+* Use Git to push your answers to your repo on GitHub.
 
-### 3. Submit and verify your answers
-
-* [Use the quiz server to submit and verify your answers](#submit-and-verify-quiz-answers).
-
-## Quiz server
-
-### Submit and verify quiz answers
+### 5. Submit and verify your answers
 
 ```
 $ cd path/to/root/of/repo
-$ rake submit_and_verify_quiz_answers github-username chapter-number quiz-number
-$ (e.g. rake submit_and_verify_quiz_answers timmydev 1 1)
+$ rake submit_and_verify_quiz_answers [github-username] [chapter-number] [quiz-number]
+$ (e.g. rake submit_and_verify_quiz_answers timmy-the-developer 1 1)
 ```
 
 * In order to be judged correct, your code must 100% of the automated tests for the quiz.
-* If you get a confusing response when you run this command, just Slack @maryrosecook for help!
-
-### Get a quiz
-
-* You can only get a quiz after you've successfully submitted and verified answers for the previous quiz.
-
-```
-$ cd path/to/root/of/repo
-$ rake get_quiz githubusername chapter-number quiz-number
-$ (e.g. rake get_quiz timmydev 1 1)
-```
-
 * If you get a confusing response when you run this command, just Slack @maryrosecook for help!
