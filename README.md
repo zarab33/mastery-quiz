@@ -119,7 +119,7 @@ $ rake submit_and_verify_quiz_answers [github-username] [chapter-number] [quiz-n
 $ (e.g. rake submit_and_verify_quiz_answers timmy-the-developer 1 1)
 ```
 
-* In order to be judged correct, your code must 100% of the automated tests for the quiz.
+* In order to be judged correct, your code must pass 100% of the automated tests for the quiz.
 * If you get a confusing response when you run this command, just Slack @maryrosecook for help!
 
 ## Help something is broken!
