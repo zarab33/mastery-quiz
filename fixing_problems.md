@@ -31,11 +31,11 @@
 
 https://www.youtube.com/watch?v=Bt4Q0nP9Igc
 
-## When I run the tests with `rspec`, they fail
+## When I run the automated tests with `rspec`, they fail
 
-### What are tests?
+### What are automated tests?
 
-* The automated tests are small test programs that live in a file like `question_1_spec.rb`.  These small test programs run parts of the program that you wrote (e.g. the program in `question_1.rb`) to check it conforms to the program specification.
+* Automated tests are small test programs that live in a file like `question_1_spec.rb`.  These small test programs run parts of the program that you wrote (e.g. a program in `question_1.rb`) to check it conforms to the program specification.
 
 * A program specification is a description of what your program is expected to do.  It is always in the comments at the top of the question file. e.g. in `question_1.rb`:
 
@@ -45,13 +45,13 @@ https://www.youtube.com/watch?v=Bt4Q0nP9Igc
 
 * When all the tests for a quiz question pass, you've passed that quiz question!
 
-* Your program should do the *bare minimum* needed to follow the program specification and pass the tests.
+* Your program should do the **bare minimum** needed to follow the program specification and pass the tests.
 
 ### What should my program do?
 
 #### You can get information about what your program needs to do from the program specification itself
 
-This is in the comment at the top of the question file (e.g. `question_1.rb).
+This is in the comments at the top of the question file (e.g. `question_1.rb).
 
 ```ruby
 # Write a program that `puts`es a number.
@@ -85,11 +85,11 @@ let (:expected_output) {
 }
 ```
 
-The example test code above might be hard to read right now, but if you squint you might be able to guess that the user seems to be inputting 10, 4, 2, 7, 5 and 1 and the program is supposed to `puts` a line of ten dashes, a line of 4 dashes...
+The example test code above might be hard to read right now, but if you squint you might be able to guess that the user seems to be inputting `10`, `4`, `2`, `7`, `5` and `1` and the program is supposed to `puts` a line of ten dashes, a line of 4 dashes etc.
 
 ### I can't understand the test failure error message
 
-#### The error message is confusing me
+#### I don't know what the parts of the error message mean
 
 Let's wring every single piece of information we can from this error!
 
@@ -113,30 +113,29 @@ Let's wring every single piece of information we can from this error!
 17.       # ./spec/question_2_spec.rb:7:in `block (2 levels) in <top (required)>'
 ```
 
-* `1` tells us which question has the error.
+* `1` tells us which question program has the error.
 
 * `2` tells us what the test is expecting the program to do.  That is: which part of the program specification it is checking.
 
-* `8` shows us a relevant part of the test code.  We can tell that our `question_2.rb` file is being run.
+* `8` shows us the part of the test code that failed.  We can tell that our `question_2.rb` file is being run.
 
-* `9` shows us the next line of the relevant part of the test code.  We can tell that the test is expecting some particular output.  We can look in the `question_2_spec.rb` test file to see what `expected` is.
+* `9` shows us the next line of the part of the test code that failed.  We can tell that the test is expecting some particular output.  We could look in the `question_2_spec.rb` test file to see what `expected` is.
 
 * `11` tells us that an exception has been raised that has caused the program to terminate.
 
-* `11` tells us what type of error was the cause of the exception.  In this case, it's a NameError, which is raised when either a variable doesn't exist, or when a variable name is syntactically invalid.
+* `11` tells us what type of error caused the exception.  In this case, it's a NameError, which is raised when either a variable doesn't exist, or when a variable name is syntactically invalid.
 
-* `12` gives us the details of the exception.  In this case, it tells us exactly what is wrong with the program! We've tried to use a variable or method called `numbers` and it doesn't exist.
+* `12` gives us more details about the error that caused the exception.  In this case, it tells us exactly what is wrong with the program! We've tried to use a variable or method called `numbers` and it doesn't exist.
 
 * `13` is the start of the stack trace.  It tells us which line was the last to execute in our program before it terminated.  We should start our search for the error here.
 
 * `14` to `17` show the rest of the stack trace.  These are lines that were executed before the line indicated by `13`.
 
-* `17` tells us the file and line number of the first line of code run right at the beginning of the program.  In this case, it tells us which test caused the error.
+* `17` tells us the filename and line number of the first line of code run right at the beginning of the program.  In this case, it tells us which test caused the error.
 
-#### The test that fails is called "has acceptable code quality" and I don't know how to fix it
+#### The test that fails is called `has acceptable code quality` and I don't know how to fix it
 
-* For more general help on reading test failures, see "The error message is confusing me" above.
-* This section focuses on resolving code quality problems.
+* For more general help on reading test error messages, see "I don't know what the parts of the error message mean" above.
 
 ```
  1.  Q1. FizzBuzz to 20
@@ -166,27 +165,27 @@ Let's wring every single piece of information we can from this error!
 
 * `7` tells us that the test has failed because one or more parts of the code in the question file are not high enough quality.
 
-* `15` tells us the file and line number of a piece of code that is not high enough quality.
+* `15` tells us the filename and line number of a piece of code that is not high enough quality.
 
-* `15` Tells us the quality rule that this line of code breaks: `Lint/UselessAssignment`.
+* `15` tells us the quality rule that this line of code breaks: `Lint/UselessAssignment`.
 
-* `15` Gives us more details on why the line of code broke the quality rule `Useless assignment to variable - a`
+* `15` gives us more details on why the line of code broke the quality rule: `Useless assignment to variable - a`
 
-* `16` Shows us the code of the line that breaks the quality rule.
+* `16` shows us the actual code that breaks the quality rule.
 
-* `17` Shows us the part of the line of code that breaks the quality rule.
+* `17` shows us the part of the line of code that breaks the quality rule.
 
-* `18` to `20` Give us the details for another bit of code that breaks a different quality rule.
+* `18` to `20` give us the details for another bit of code that breaks a different quality rule.
 
 #### The `rspec` error says something about a `Diff`
 
 * A "diff" is a list of differences between two pieces of text.
 
-* An rspec error that mentions a diff usually means that your program is outputting something different from what the test wants to be output.
+* If you see an rspec error that mentions a diff, it usually means that your program is outputting something different from what the test wants to be output.
 
-##### The contents of the diff tells you exactly what this test wants to see your program output
+##### Look at the diff to see exactly what the test your program to output
 
-* A diff tells us two different things e.g.
+* A diff tells us two different things.
 
 ```diff
 expected block to output /31375
@@ -198,30 +197,13 @@ Diff:
 +The sum of all integers from 1' to '250' is 249
 ```
 
-1. The first two lines tell us exactly what the test was expecting the program to output:
+1. The first two lines tell us exactly what the test was expecting the program to output :`31375` with a new line at the end.  And the first two lines also tell us exactly what it actually output: `The sum of all integers from 1' to '250' is 249`
 
-```
-31375
-
-```
-
-and exactly what it actually output:
-
-```
-The sum of all integers from 1' to '250' is 249
-```
-
-2. The last three lines tell us what the differences were between the two versions.  The `-`s indicate lines it didn't see but expected to see.  And the `+`s tells us lines it didn't expect to see but did see.
+2. The last three lines tell us what the differences were between the two versions.  A `-` indicates a line it didn't see but expected to see.  And a `+` indicates a line it didn't expect to see but did see.
 
 ##### Check the spelling, capitalisation, spacing and line breaks of your program's output
 
-* Computers require high precision.  If the computer checks for `E`, it very often very precise.  It won't accept `e` or `E ` or `E\n`.
-
-
-
-
-
-
+* Computers require high precision.  If the computer checks for `E`, it expects exactly that.  It won't accept `e` or `E    ` or `E\n`.
 
 ## The tests for a quiz pass on my computer, but when I submit them with `rake submit_and_verify_quiz_answers`, they fail
 
