@@ -6,7 +6,7 @@
 
 ## Setup
 
-1. Fork this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
+1. On Monday of week 2 of the precourse, fork this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
 
 2. Send @maryrosecook a message on Slack to tell her that you've forked the repo.  (She needs to set you up on the admin system.)
 
