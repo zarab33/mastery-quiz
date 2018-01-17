@@ -1,10 +1,12 @@
 # Fixing problems
 
-## I can't find the quizzes in mastery-quizzes
+## I can't find the quizzes in the mastery-quizzes repo
 
-* You need to manually request a quiz.  See ["Get the quiz" in the README](README.md#get-the-quiz).
+* You need to manually get a quiz.  See ["Get the quiz" in the README](README.md#get-the-quiz).
 
-## One or more of the commands I ran on the command line during the setup result in an error
+## One of the commands I ran on the command line during the setup results in an error
+
+### Contact Mary
 
 * Contact @maryrosecook on Slack with a description of what you did and the full error message.
 
@@ -19,6 +21,10 @@
 * Is your GitHub username correct?
 * Does your GitHub username have the correct capitalisation?
 
+### Contact Mary
+
+* Contact @maryrosecook on Slack with a description of what you did and the full error message.
+
 ## My program won't do what I want it to do and I don't know why
 
 ### Watch the video guide to effective debugging
@@ -27,33 +33,37 @@ https://www.youtube.com/watch?v=Bt4Q0nP9Igc
 
 ## When I run the tests with `rspec`, they fail
 
-### I don't know what my program should do
+### What are tests?
 
 * The automated tests are small test programs that live in a file like `question_1_spec.rb`.  These small test programs run parts of the program that you wrote (e.g. the program in `question_1.rb`) to check it conforms to the program specification.
 
-* To get the tests to pass, you just need to write a program that does the things required by the program specification.
-
-* When your code makes all the tests pass, you're done!
-
-* Your program should have tho *bare minimum* of code needed to follow this program specification.
-
-#### You can get information about what your program needs to do from the program specification itself
-
-e.g.
+* A program specification is a description of what your program is expected to do.  It is always in the comments at the top of the question file. e.g. in `question_1.rb`:
 
 ```ruby
 # Write a program that `puts`es a number.
 ```
 
-#### You can get information about what your program needs to do from the test descriptions in the test file (e.g. `question_1_spec.rb`).
+* When all the tests for a quiz question pass, you've passed that quiz question!
 
-Look at the lines that look like this:
+* Your program should do the *bare minimum* needed to follow the program specification and pass the tests.
+
+### What should my program do?
+
+#### You can get information about what your program needs to do from the program specification itself
+
+This is in the comment at the top of the question file (e.g. `question_1.rb).
+
+```ruby
+# Write a program that `puts`es a number.
+```
+
+#### You can get information about what your program needs to do from the test descriptions in the test file
+
+The test descriptions are in the test spec file (e.g. `question_1_spec.rb`). Look at the lines that look like this:
 
 ```ruby
 context "user enters many numbers: 10,4,2,7,5,1" do
 ```
-
-and
 
 ```ruby
 it "`puts`es one bar for each number" do
@@ -61,7 +71,7 @@ it "`puts`es one bar for each number" do
 
 #### You can get information about what your program needs to do from the actual test code
 
-e.g.:
+This test code is in the test spec file (e.g. `question_1_spec.rb`).
 
 ```ruby
 let (:user_input) { "10,4,2,7,5,1\n" }
@@ -75,7 +85,7 @@ let (:expected_output) {
 }
 ```
 
-This code might be hard to read right now, but if you squint you might be able to guess that the user seems to be inputting 10, 4, 2, 7, 5 and 1 and the program is supposed to `puts` a line of ten dashes, a line of 4 dashes...
+The example test code above might be hard to read right now, but if you squint you might be able to guess that the user seems to be inputting 10, 4, 2, 7, 5 and 1 and the program is supposed to `puts` a line of ten dashes, a line of 4 dashes...
 
 ### I can't understand the test failure error message
 
