@@ -3,7 +3,7 @@
 * [Setup](#setup)
 * [How to work through the quizzes](#how-to-work-through-the-quizzes)
 * [How to complete a quiz](#how-to-complete-a-quiz)
-* [HELP SOMETHING IS BROKEN!](#help-something-is-broken)
+* [HELP SOMETHING IS BROKEN!](fixing_problems.md)
 
 ## Setup
 
