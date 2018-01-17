@@ -59,6 +59,8 @@ Your aim is to get through all the chapters, but the most important thing for yo
 
 ### 1. Get the quiz
 
+* There is one quiz per chapter.
+
 * You can only get a quiz after you've successfully submitted and verified answers for the previous quiz.
 
 ```
