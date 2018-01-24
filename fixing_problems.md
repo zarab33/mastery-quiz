@@ -29,41 +29,7 @@
 
 * (It's very important to note that making slow progress is OK.  If you've made a bit of progress on the problem in the last 20 minutes, maybe continue with what you're doing.)
 
-* If you haven't made any progress for 20 minutes, it's time to take a step back and maybe change your approach.
-
-### Watch the video guide to effective debugging
-
-https://www.youtube.com/watch?v=Bt4Q0nP9Igc
-
-### List your assumptions.
-
-* List all your assumptions.
-* Go through each one and check it's correct.
-* Most bugs are because of an assumption that is either wrong, or an assumption you didn't even realise you made.
-
-### List everything you know about the problem or bug
-
-### Rubber duck debug
-
-From Wikipedia:
-
-> In software engineering, rubber duck debugging or rubber ducking is a method of debugging code. A programmer debugs their code by forcing themselves to explain it, line-by-line, to a rubber duck.
-
-> Many programmers have had the experience of explaining a problem to someone else, possibly even to someone who knows nothing about programming, and then hitting upon the solution in the process of explaining the problem. In describing what the code is supposed to do and observing what it actually does, any incongruity between these two becomes apparent. More generally, teaching a subject forces its evaluation from different perspectives and can provide a deeper understanding.
-
-### Break down the problem
-
-* Is there a smaller part of the problem? Can you solve it first?
-* Do you have to solve this whole problem? Or will solving a different problem produce the results you want?
-
-### Draw a diagram
-
-* Many people find it easier to reason about programs visually, rather than in code.
-* Draw a diagram that shows your current understanding of the problem and see if it makes sense.
-
-### Try a different approach
-
-* Is there another solution to the same problem? Try it out.
+* If you haven't made any progress for 20 minutes, use the *[problem solving guide](https://makersacademy.teachable.com/courses/256825/lectures/3989121)*.
 
 ## When I run the automated tests with `rspec`, they fail
 
