@@ -29,7 +29,7 @@
 
 * (It's very important to note that making slow progress is OK.  If you've made a bit of progress on the problem in the last 20 minutes, maybe continue with what you're doing.)
 
-* If you haven't made any progress for 20 minutes, use the *[problem solving guide](https://makersacademy.teachable.com/courses/256825/lectures/3989121)*.
+* If you haven't made any progress for 20 minutes, use the **[problem solving guide](https://makersacademy.teachable.com/courses/256825/lectures/3989121)**.
 
 ## When I run the automated tests with `rspec`, they fail
 
