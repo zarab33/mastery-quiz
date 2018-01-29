@@ -32,7 +32,7 @@ $ cd path/to/root/of/this/repo
 $ bundle install
 ```
 
-8. Note that your clone will not have any quizzes in it, yet.  When you've completed a chapter, you can get a quiz by following the [instructions below](#instructions).
+8. Note that your clone will not have any quizzes in it, yet.  When you've completed a chapter, you can get a quiz by following the [How to complete a quiz instructions](#how-to-complete-a-quiz) below.
 
 ## How to work through the quizzes
 
@@ -53,8 +53,8 @@ Your aim is to get through all the chapters, but the most important thing for yo
 1. [Get the quiz](#1-get-the-quiz).
 2. [Write code to answer the quiz questions](#2-write-code-to-answer-the-quiz-questions).
 3. [Check that your answers pass the automated tests](#3-check-that-your-answers-pass-the-automated-tests).
-4. [Commit and push your answers](#commit-and-push-your-answers).
-5. [Submit and verify your answers](#submit-and-verify-your-answers).
+4. [Commit and push your answers](#4-commit-and-push-your-answers).
+5. [Submit and verify your answers](#5-submit-and-verify-your-answers).
 
 ### 1. Get the quiz
 
