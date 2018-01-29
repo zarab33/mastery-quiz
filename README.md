@@ -70,6 +70,8 @@ Your aim is to get through all the chapters, but the most important thing for yo
 
 * Click the "Get Quiz" button.
 
+* Use git to pull the quiz to your local repo.
+
 ### 2. Write code to answer the quiz questions
 
 * Each question is in a separate file e.g. `chapter1/quiz1/question_1.rb`.
