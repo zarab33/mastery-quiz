@@ -9,25 +9,23 @@
 
 1. On Monday of week 2 of the precourse, fork this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
 
-2. Send @maryrosecook a message on Slack to tell her that you've forked the repo.  (She needs to set you up on the admin system.)
+2. Clone your fork to your computer.
 
-3. Clone your fork to your computer.
-
-4. Make sure you use Ruby version `2.4.1`.  To check your Ruby version, run the command below.
+3. Make sure you use Ruby version `2.2.3`.  To check your Ruby version, run the command below.
 
 ```
 $ ruby -v
 ```
 
-5. If required, use [RVM](https://rvm.io/) to install version `2.4.1`.
+4. If required, use [RVM](https://rvm.io/) to install version `2.2.3`.
 
-6. Install bundler.  To do this, run:
+5. Install bundler.  To do this, run:
 
 ```
 $ gem install bundler
 ```
 
-7. Install the gems required by this repository. To do this, run:
+6. Install the gems required by this repository. To do this, run:
 
 ```
 $ cd path/to/root/of/this/repo
@@ -64,13 +62,9 @@ Your aim is to get through all the chapters, but the most important thing for yo
 
 * You can only get a quiz after you've successfully submitted and verified answers for the previous quiz.
 
-```
-$ cd path/to/root/of/repo
-$ rake get_quiz [github-username] [chapter-number] [quiz-number]
-$ (e.g. rake get_quiz timmy-the-developer 1 1)
-```
+* Go to https://hub.makersacademy.com
 
-* If you get a confusing response when you run this command, just Slack @maryrosecook for help!
+* Click the "Get Quiz" button.
 
 ### 2. Write code to answer the quiz questions
 
@@ -109,18 +103,16 @@ $ rspec
 ### 4. Commit and push your answers
 
 * Use Git to commit your answers to your local Git repo.
+
 * Use Git to push your answers to your repo on GitHub.
 
 ### 5. Submit and verify your answers
 
-```
-$ cd path/to/root/of/repo
-$ rake submit_and_verify_quiz_answers [github-username] [chapter-number] [quiz-number]
-$ (e.g. rake submit_and_verify_quiz_answers timmy-the-developer 1 1)
-```
+* Go to https://hub.makersacademy.com
+
+* Click the "Submit Quiz" button.
 
 * In order to be judged correct, your code must pass 100% of the automated tests for the quiz.
-* If you get a confusing response when you run this command, just Slack @maryrosecook for help!
 
 ## Fixing problems
 
