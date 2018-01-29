@@ -2,7 +2,7 @@
 
 ## I can't find the quizzes in the mastery-quizzes repo
 
-* You need to manually get a quiz.  See ["Get the quiz" in the README](README.md#get-the-quiz).
+* You need to manually get a quiz.  See ["Get the quiz" in the README](README.md#1-get-the-quiz).
 
 ## One of the commands I ran on the command line during the setup results in an error
 
