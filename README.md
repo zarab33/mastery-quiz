@@ -64,6 +64,10 @@ Your aim is to get through all the chapters, but the most important thing for yo
 
 * Go to https://hub.makersacademy.com
 
+* The URL in the browser address bar should look like this: `https://hub.makersacademy.com/students/[NUMBER HERE]`
+
+* Add `/precourse` before `/students` to create: `https://hub.makersacademy.com/precourse/students/[NUMBER HERE]` and press return.
+
 * Click the "Get Quiz" button.
 
 ### 2. Write code to answer the quiz questions
@@ -109,6 +113,10 @@ $ rspec
 ### 5. Submit and verify your answers
 
 * Go to https://hub.makersacademy.com
+
+* The URL in the browser address bar should look like this: `https://hub.makersacademy.com/students/[NUMBER HERE]`
+
+* Add `/precourse` before `/students` to create: `https://hub.makersacademy.com/precourse/students/[NUMBER HERE]` and press return.
 
 * Click the "Submit Quiz" button.
 
