@@ -16,11 +16,6 @@
 
 * Make sure you did all the instructions in order and none of them produced any errors.
 
-### Check the get_quiz command you ran
-
-* Is your GitHub username correct?
-* Does your GitHub username have the correct capitalisation?
-
 ### Contact Mary
 
 * Contact @maryrosecook on Slack with a description of what you did and the full error message.
@@ -205,7 +200,7 @@ Diff:
 
 * Computers require high precision.  If the computer checks for `E`, it expects exactly that.  It won't accept `e` or `E    ` or `E\n`.
 
-## The tests for a quiz pass on my computer, but when I submit them with `rake submit_and_verify_quiz_answers`, they fail
+## The tests for a quiz pass on my computer, but when I submit them with the "Submit quiz" button, they fail
 
 ### Check the tests really do pass on your computer
 
