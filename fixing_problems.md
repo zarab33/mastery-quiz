@@ -128,6 +128,12 @@ Let's wring every single piece of information we can from this error!
 
 * `17` tells us the filename and line number of the first line of code run right at the beginning of the program.  In this case, it tells us which test caused the error.
 
+#### I get an error saying `cannot load such file -- mastery_answer_code_quality`
+
+* `mastery_answer_code_quality` is a gem that is installed when you run `bundle install`.  
+
+* Run `bundle install` to install it.
+
 #### The test that fails is called `has acceptable code quality` and I don't know how to fix it
 
 * For more general help on reading test error messages, see "I don't know what the parts of the error message mean" above.
