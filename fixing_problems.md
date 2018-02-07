@@ -226,3 +226,7 @@ It should say `0 failures`.
 ### Check you're not running your program in the top level of your question file
 
 * Does the question file (e.g. `question_1.rb`) have a comment like "Note: When you run the automated tests, make sure to remove from the top level of the file any calls to `run_test` or other methods."? If so, make sure you haven't done this.
+
+### Make sure you don't have to type anything into the command line to get the tests to pass locally
+
+* When the program you wrote uses `gets` to get user input, the automated tests for it will automatically supply simulated user input.  You should not need to type anything into the command line to get the automated tests to pass.  If you do need to, the program you wrote is not correct, yet.
