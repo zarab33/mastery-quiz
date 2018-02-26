@@ -1,5 +1,7 @@
 # Fixing problems
 
+* If you run into trouble, don't delete your `mastery-quizzes` repo fork!
+
 ## I can't find the quizzes in the mastery-quizzes repo
 
 * You need to manually get a quiz.  See ["Get the quiz" in the README](README.md#1-get-the-quiz).
