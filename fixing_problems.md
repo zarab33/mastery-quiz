@@ -6,9 +6,9 @@
 
 ## One of the commands I ran on the command line during the setup results in an error
 
-### Contact Mary
+### Contact Kay
 
-* Contact @maryrosecook on Slack with a description of what you did and the full error message.
+* Contact @kaylovelace on Slack with a description of what you did and the full error message.
 
 ## I can't get a quiz
 
@@ -16,9 +16,9 @@
 
 * Make sure you did all the instructions in order and none of them produced any errors.
 
-### Contact Mary
+### Contact Kay
 
-* Contact @maryrosecook on Slack with a description of what you did and the full error message.
+* Contact @kaylovelace on Slack with a description of what you did and the full error message.
 
 ## I haven't made any progress on a problem for 20 minutes
 
