@@ -42,7 +42,7 @@ $ bundle install
 
 3. When you've absorbed the content of the chapter thoroughly, [get and complete the quiz](#how-to-complete-a-quiz).
 
-4. If you get stuck and can't complete a quiz, contact Sophie Gill on Slack and she'll give you feedback to help you learn what you need to complete the quiz.
+4. If you get stuck and can't complete a quiz, contact your PreCourse Coach on Slack and they'll give you feedback to help you learn what you need to complete the quiz.
 
 5. Once you have submitted your quiz answers, and your answers have been verified as correct, continue to the next chapter.
 
