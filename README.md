@@ -22,7 +22,7 @@ $ ruby -v
 5. Install bundler.  To do this, run:
 
 ```
-$ gem install bundler
+$ gem install bundler -v 1.16.2
 ```
 
 6. Install the gems required by this repository. To do this, run:
