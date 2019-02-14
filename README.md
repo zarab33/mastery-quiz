@@ -25,10 +25,11 @@ $ ruby -v
 $ gem install bundler -v 1.16.2
 ```
 
-6. Install the gems required by this repository. To do this, run:
+6. Using `cd`, navigate to the `mastery-quizzes` repository you just made. 
+
+7. Install the gems required by this repository. In the `mastery-quizzes` repository, just run:
 
 ```
-$ cd path/to/root/of/this/repo
 $ bundle install
 ```
 
