@@ -12,6 +12,15 @@
 
 * Contact your PreCourse Coach on Slack with a description of what you did and the full error message.
 
+### Open SSL Error
+
+Because of some recent changes to Ruby, you might have problems setting up this challenge, which needs you to have an older version installed. If you see error messages during setup that reference `Open SSL`, try running the following commands:
+
+```
+brew install openssl
+rvm reinstall 2.2.3 --with-openssl-dir=`brew --prefix openssl`
+```
+
 ## I can't get a quiz
 
 ### Do the setup instructions
@@ -27,6 +36,18 @@
 * (It's very important to note that making slow progress is OK.  If you've made a bit of progress on the problem in the last 20 minutes, maybe continue with what you're doing.)
 
 * If you haven't made any progress for 20 minutes, use the **[problem solving guide](https://makersacademy.teachable.com/courses/256825/lectures/3989121)**.
+
+## When I run the automated tests, I get an error about the `mastery_answer_code_quality` gem
+
+### Have you run `bundle install`
+
+* Make sure you have run bundle install in the mastery-quizzes directory, and then try running rspec again.
+
+* If you're still getting the error, try running the tests using the following command:
+
+```
+bundle exec rspec
+```
 
 ## When I run the automated tests with `rspec`, they fail
 
