@@ -119,8 +119,6 @@ $ rspec
 
 * The URL in the browser address bar will look like this: `https://hub.makersacademy.com/students/[NUMBER HERE]`
 
-* Add `/precourse` before `/students` to create: `https://hub.makersacademy.com/precourse/students/[NUMBER HERE]` and press return.
-
 * Click the "Submit Quiz" button.
 
 * In order to be judged correct, your code must pass 100% of the automated tests for the quiz.
