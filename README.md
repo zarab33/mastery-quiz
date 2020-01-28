@@ -11,18 +11,18 @@
 
 2. Then clone **your** fork to your computer.  (Or clone it to Cloud9 if you're on Windows.)
 
-3. Make sure you use Ruby version `2.2.3`.  To check your Ruby version, run the command below.
+3. Make sure you have ruby installed.  To check your Ruby version, run the command below (Version 2.6 or higher should be fine).
 
 ```
 $ ruby -v
 ```
 
-4. If required, use [RVM](https://rvm.io/) to install version `2.2.3`.
+4. If required, use [RVM](https://rvm.io/) to install version `2.6.3`.
 
 5. Install bundler.  To do this, run:
 
 ```
-$ gem install bundler -v 1.16.2
+$ gem install bundler 
 ```
 
 6. Using `cd`, navigate to the `mastery-quizzes` repository you just made. 
