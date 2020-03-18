@@ -17,7 +17,7 @@
 $ ruby -v
 ```
 
-4. If required, use [RVM](https://rvm.io/) to install version `2.6.3`.
+4. If required, use [RVM](https://rvm.io/) to install version `2.6.5`.
 
 5. Install bundler.  To do this, run:
 
