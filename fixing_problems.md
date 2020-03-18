@@ -12,15 +12,6 @@
 
 * Contact your PreCourse Coach on Slack with a description of what you did and the full error message.
 
-### Open SSL Error
-
-Because of some recent changes to Ruby, you might have problems setting up this challenge, which needs you to have an older version installed. If you see error messages during setup that reference `Open SSL`, try running the following commands:
-
-```
-brew install openssl
-rvm reinstall 2.2.3 --with-openssl-dir=`brew --prefix openssl`
-```
-
 ## I can't get a quiz
 
 ### Do the setup instructions
