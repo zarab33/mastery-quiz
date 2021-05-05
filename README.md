@@ -91,7 +91,7 @@ Your aim is to get through all the chapters, but the most important thing for yo
 
 ### 3. Check that your answers pass the automated tests
 
-Your code will be automatically tested that it correctly fulfills the requirements (outputs the correct results) and that it is well written code. These automated tests are done using RSpec - a very commonly used testing tool for Ruby. You might find it useful to read the [RSpec Pill](https://makersacademy.teachable.com/courses/makers-academy-mastery-precourse/lectures/3989149) before you run your first test to gain a deeper understanding of how the tests work. Don't worry too much about creating your own tests at this point as that's what you'll do loads of in Week 4!
+Your code will be automatically tested that it correctly fulfills the requirements (outputs the correct results) and that it is well written code. These automated tests are done using RSpec - a very commonly used testing tool for Ruby. You might find it useful to read the [Fixing Problems](https://github.com/makersacademy/mastery-quizzes/blob/master/fixing_problems.md) guide that explains tests and understanding errors. Take a look at the [RSpec Pill](https://makersacademy.teachable.com/courses/makers-academy-mastery-precourse/lectures/3989149) for a more general overview. Don't worry too much about creating your own tests at this point as that's what you'll do loads of in Week 4!
 
 * To check your answer for a question:
 
