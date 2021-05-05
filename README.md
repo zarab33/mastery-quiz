@@ -11,7 +11,7 @@
 
 2. Then clone **your** fork to your computer.  (Or clone it to Cloud9 if you're on Windows.)
 
-3. Make sure you have ruby installed.  To check your Ruby version, run the command below (Version 2.6 or higher should be fine).
+3. Make sure you have ruby installed.  To check your Ruby version, run the command below (Version 2.6.5 or higher should be fine).
 
 ```
 $ ruby -v
