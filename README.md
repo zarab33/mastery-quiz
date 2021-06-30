@@ -7,9 +7,9 @@
 
 ## Setup
 
-1. On Monday of week 2 of the precourse, **fork** (not clone) this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
+1. **Fork** (not clone) this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
 
-2. Then clone **your** fork to your computer.  (Or clone it to Cloud9 if you're on Windows.)
+2. Then clone **your** fork to your computer. (Or to Cloud9 if you're on Windows.)
 
 3. Make sure you have ruby installed.  To check your Ruby version, run the command below (Version 2.6.5 or higher should be fine).
 
@@ -43,7 +43,7 @@ $ bundle install
 
 3. When you've absorbed the content of the chapter thoroughly, [get and complete the quiz](#how-to-complete-a-quiz).
 
-4. If you get stuck and can't complete a quiz, contact your PreCourse Coach on Slack and they'll give you feedback to help you learn what you need to complete the quiz.
+4. If you get stuck and can't complete a quiz, contact your coach on Slack and they'll give you feedback to help you learn what you need to complete the quiz.
 
 5. Once you have submitted your quiz answers, and your answers have been verified as correct, continue to the next chapter.
 
