@@ -10,7 +10,7 @@
 
 ### Contact a Coach
 
-* Contact your PreCourse Coach on Slack with a description of what you did and the full error message.
+* Contact your Coach on Slack with a description of what you did and the full error message.
 
 ## I can't get a quiz
 
@@ -20,13 +20,13 @@
 
 ### Contact a Coach
 
-* Contact your PreCourse Coach on Slack with a description of what you did and the full error message.
+* Contact your Coach on Slack with a description of what you did and the full error message.
 
 ## I haven't made any progress on a problem for 20 minutes
 
 * (It's very important to note that making slow progress is OK.  If you've made a bit of progress on the problem in the last 20 minutes, maybe continue with what you're doing.)
 
-* If you haven't made any progress for 20 minutes, use the **[problem solving guide](https://makersacademy.teachable.com/courses/256825/lectures/3989121)**.
+* If you haven't made any progress for 20 minutes, use the **problem solving guide** in the Teachable resources.
 
 ## When I run the automated tests, I get an error about the `mastery_answer_code_quality` gem
 
