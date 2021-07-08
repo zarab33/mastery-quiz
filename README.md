@@ -11,13 +11,13 @@
 
 2. Then clone **your** fork to your computer. (Or to Cloud9 if you're on Windows.)
 
-3. Make sure you have ruby installed.  To check your Ruby version, run the command below (Version 2.6.5 or higher should be fine).
+3. Make sure you have ruby installed.  To check your Ruby version, run the command below (it should be version 2.7.3).
 
 ```
 $ ruby -v
 ```
 
-4. If required, use [RVM](https://rvm.io/) to install version `2.6.5`.
+4. If required, use [RVM](https://rvm.io/) to install version `2.7.3`.
 
 5. Install bundler.  To do this, run:
 
