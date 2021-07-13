@@ -11,13 +11,13 @@
 
 2. Then clone **your** fork to your computer. (Or to Cloud9 if you're on Windows.)
 
-3. Make sure you have ruby installed.  To check your Ruby version, run the command below (Version 2.6.5 or higher should be fine).
+3. Make sure you have ruby installed.  To check your Ruby version, run the command below (it should be version 2.7.3).
 
 ```
 $ ruby -v
 ```
 
-4. If required, use [RVM](https://rvm.io/) to install version `2.6.5`.
+4. If required, use [RVM](https://rvm.io/) to install version `2.7.3`.
 
 5. Install bundler.  To do this, run:
 
@@ -66,8 +66,6 @@ Your aim is to get through all the chapters, but the most important thing for yo
 * Go to https://hub.makersacademy.com
 
 * The URL in the browser address bar will look like this: `https://hub.makersacademy.com/students/[NUMBER HERE]`
-
-* Add `/precourse` before `/students` to create: `https://hub.makersacademy.com/precourse/students/[NUMBER HERE]` and press return.
 
 * Click the "Get Quiz" button.
 
@@ -120,8 +118,6 @@ $ rspec
 * Go to https://hub.makersacademy.com
 
 * The URL in the browser address bar will look like this: `https://hub.makersacademy.com/students/[NUMBER HERE]`
-
-* Navigate to: `https://hub.makersacademy.com/precourse/students/[NUMBER HERE]`
 
 * Click the "Submit Quiz" button.
 
