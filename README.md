@@ -67,8 +67,6 @@ Your aim is to get through all the chapters, but the most important thing for yo
 
 * The URL in the browser address bar will look like this: `https://hub.makersacademy.com/students/[NUMBER HERE]`
 
-* Add `/precourse` before `/students` to create: `https://hub.makersacademy.com/precourse/students/[NUMBER HERE]` and press return.
-
 * Click the "Get Quiz" button.
 
 * Use git to pull the quiz to your local repo.
@@ -120,8 +118,6 @@ $ rspec
 * Go to https://hub.makersacademy.com
 
 * The URL in the browser address bar will look like this: `https://hub.makersacademy.com/students/[NUMBER HERE]`
-
-* Navigate to: `https://hub.makersacademy.com/precourse/students/[NUMBER HERE]`
 
 * Click the "Submit Quiz" button.
 
