@@ -7,3 +7,9 @@
 #     number is the result of `0 + 1`.
 # * `puts`es these numbers, one per line.
 
+first_num = 0
+second_num = 1
+20.times do
+  puts first_num
+  first_num, second_num = second_num, first_num + second_num
+end
