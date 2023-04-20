@@ -1,0 +1,67 @@
+.F.F..
+
+Failures:
+
+  1) Q1. FizzBuzz to 20 has acceptable code quality
+     Failure/Error: expect(code_quality.acceptable?).to(eq(true), code_quality.problems)
+
+       Inspecting 1 file
+       W
+
+       Offenses:
+
+       questions/question_1.rb:12:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+           if fizzbuzz % 3 == 0 && fizzbuzz % 5 == 0
+       ^^^^
+       questions/question_1.rb:13:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 0) spaces for indentation.
+           puts "FizzBuzz"
+           
+       questions/question_1.rb:15:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+           puts "Fizz"
+       ^^^^
+       questions/question_1.rb:17:2: C: [Correctable] Layout/IndentationWidth: Use 2 (not 3) spaces for indentation.
+           puts "Buzz"
+        ^^^
+       questions/question_1.rb:19:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 0) spaces for indentation.
+           puts fizzbuzz
+           
+       questions/question_1.rb:20:1: W: [Correctable] Layout/EndAlignment: end at 20, 0 is not aligned with if at 12, 4.
+       end
+       ^^^
+
+       1 file inspected, 6 offenses detected, 6 offenses autocorrectable
+
+       Diff:
+       @@ -1 +1 @@
+       -true
+       +false
+     # ./spec/question_1_spec.rb:32:in `block (2 levels) in <top (required)>'
+
+  2) Q2. Sum integers has acceptable code quality
+     Failure/Error: expect(code_quality.acceptable?).to(eq(true), code_quality.problems)
+
+       Inspecting 1 file
+       C
+
+       Offenses:
+
+       questions/question_2.rb:3:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 0) spaces for indentation.
+       total += num
+
+
+       1 file inspected, 1 offense detected, 1 offense autocorrectable
+
+       Diff:
+       @@ -1 +1 @@
+       -true
+       +false
+     # ./spec/question_2_spec.rb:13:in `block (2 levels) in <top (required)>'
+
+Finished in 3.25 seconds (files took 0.08078 seconds to load)
+6 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/question_1_spec.rb:30 # Q1. FizzBuzz to 20 has acceptable code quality
+rspec ./spec/question_2_spec.rb:11 # Q2. Sum integers has acceptable code quality
+
