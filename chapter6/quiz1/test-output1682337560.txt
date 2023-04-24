@@ -1,0 +1,399 @@
+.FFF.FFFFFFFFF.FFFF.FFFFFFFF
+
+Failures:
+
+  1) Q1. Add up many numbers user enters just `stop` `puts`es `0`
+     Failure/Error:
+       expect { load "questions/question_1.rb" }
+         .to output(/#{total}/).to_stdout
+
+       expected block to output /0
+       / to stdout, but output nothing
+       Diff:
+       @@ -1,3 +1,2 @@
+       -/0
+       -/
+       +""
+     # ./spec/question_1_spec.rb:41:in `set_user_input_and_check_expected_output'
+     # ./spec/question_1_spec.rb:10:in `block (3 levels) in <top (required)>'
+
+  2) Q1. Add up many numbers user enters `3` and `stop` `puts`es the total (3)
+     Failure/Error:
+       expect { load "questions/question_1.rb" }
+         .to output(/#{total}/).to_stdout
+
+       expected block to output /3
+       / to stdout, but output nothing
+       Diff:
+       @@ -1,3 +1,2 @@
+       -/3
+       -/
+       +""
+     # ./spec/question_1_spec.rb:41:in `set_user_input_and_check_expected_output'
+     # ./spec/question_1_spec.rb:19:in `block (3 levels) in <top (required)>'
+
+  3) Q1. Add up many numbers user enters `5`, `4`, `3`, `2`, `1` and `stop` `puts`es the total (15)
+     Failure/Error:
+       expect { load "questions/question_1.rb" }
+         .to output(/#{total}/).to_stdout
+
+       expected block to output /15
+       / to stdout, but output nothing
+       Diff:
+       @@ -1,3 +1,2 @@
+       -/15
+       -/
+       +""
+     # ./spec/question_1_spec.rb:41:in `set_user_input_and_check_expected_output'
+     # ./spec/question_1_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  4) Q2. Rock, paper, scissors player 1: rock, player 2: rock `puts`es It's a draw
+     Failure/Error:
+       expect { load "questions/question_2.rb" }
+         .to output(/#{expected_output}/).to_stdout
+
+       expected block to output /It's a draw/ to stdout, but output nothing
+       Diff:
+       @@ -1 +1 @@
+       -/It's a draw/
+       +""
+     # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+     # ./spec/question_2_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  5) Q2. Rock, paper, scissors player 1: paper, player 2: paper `puts`es It's a draw
+     Failure/Error:
+       expect { load "questions/question_2.rb" }
+         .to output(/#{expected_output}/).to_stdout
+
+       expected block to output /It's a draw/ to stdout, but output nothing
+       Diff:
+       @@ -1 +1 @@
+       -/It's a draw/
+       +""
+     # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+     # ./spec/question_2_spec.rb:18:in `block (3 levels) in <top (required)>'
+
+  6) Q2. Rock, paper, scissors player 1: scissors, player 2: scissors `puts`es It's a draw
+     Failure/Error:
+       expect { load "questions/question_2.rb" }
+         .to output(/#{expected_output}/).to_stdout
+
+       expected block to output /It's a draw/ to stdout, but output nothing
+       Diff:
+       @@ -1 +1 @@
+       -/It's a draw/
+       +""
+     # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+     # ./spec/question_2_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  7) Q2. Rock, paper, scissors player 1: rock, player 2: scissors `puts`es Player 1 wins
+     Failure/Error:
+       expect { load "questions/question_2.rb" }
+         .to output(/#{expected_output}/).to_stdout
+
+       expected block to output /Player 1 wins/ to stdout, but output nothing
+       Diff:
+       @@ -1 +1 @@
+       -/Player 1 wins/
+       +""
+     # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+     # ./spec/question_2_spec.rb:36:in `block (3 levels) in <top (required)>'
+
+  8) Q2. Rock, paper, scissors player 1: paper, player 2: rock `puts`es Player 1 wins
+     Failure/Error:
+       expect { load "questions/question_2.rb" }
+         .to output(/#{expected_output}/).to_stdout
+
+       expected block to output /Player 1 wins/ to stdout, but output nothing
+       Diff:
+       @@ -1 +1 @@
+       -/Player 1 wins/
+       +""
+     # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+     # ./spec/question_2_spec.rb:45:in `block (3 levels) in <top (required)>'
+
+  9) Q2. Rock, paper, scissors player 1: scissors, player 2: paper `puts`es Player 1 wins
+     Failure/Error:
+       expect { load "questions/question_2.rb" }
+         .to output(/#{expected_output}/).to_stdout
+
+       expected block to output /Player 1 wins/ to stdout, but output nothing
+       Diff:
+       @@ -1 +1 @@
+       -/Player 1 wins/
+       +""
+     # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+     # ./spec/question_2_spec.rb:54:in `block (3 levels) in <top (required)>'
+
+  10) Q2. Rock, paper, scissors player 1: rock, player 2: paper `puts`es Player 2 wins
+      Failure/Error:
+        expect { load "questions/question_2.rb" }
+          .to output(/#{expected_output}/).to_stdout
+
+        expected block to output /Player 2 wins/ to stdout, but output nothing
+        Diff:
+        @@ -1 +1 @@
+        -/Player 2 wins/
+        +""
+      # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+      # ./spec/question_2_spec.rb:63:in `block (3 levels) in <top (required)>'
+
+  11) Q2. Rock, paper, scissors player 1: paper, player 2: scissors `puts`es Player 2 wins
+      Failure/Error:
+        expect { load "questions/question_2.rb" }
+          .to output(/#{expected_output}/).to_stdout
+
+        expected block to output /Player 2 wins/ to stdout, but output nothing
+        Diff:
+        @@ -1 +1 @@
+        -/Player 2 wins/
+        +""
+      # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+      # ./spec/question_2_spec.rb:72:in `block (3 levels) in <top (required)>'
+
+  12) Q2. Rock, paper, scissors player 1: scissors, player 2: rock `puts`es Player 2 wins
+      Failure/Error:
+        expect { load "questions/question_2.rb" }
+          .to output(/#{expected_output}/).to_stdout
+
+        expected block to output /Player 2 wins/ to stdout, but output nothing
+        Diff:
+        @@ -1 +1 @@
+        -/Player 2 wins/
+        +""
+      # ./spec/question_2_spec.rb:94:in `set_user_input_and_check_expected_output'
+      # ./spec/question_2_spec.rb:81:in `block (3 levels) in <top (required)>'
+
+  13) Q3. Little adventure move north to cave, move north to win `puts`es cave description, win description
+      Failure/Error:
+        expect { load "questions/question_3.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You are in a scary cave.
+        .*You walk into sunlight./m to stdout, but output nothing
+        Diff:
+        @@ -1,3 +1,2 @@
+        -/You are in a scary cave.
+        -.*You walk into sunlight./m
+        +""
+      # ./spec/question_3_spec.rb:78:in `set_user_input_and_check_expected_output'
+      # ./spec/question_3_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  14) Q3. Little adventure incorrect command in passage, move north to cave, move north no error, `puts`es cave description, win description
+      Failure/Error:
+        expect { load "questions/question_3.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /["You are in a scary cave.\n", "You walk into sunlight.\n"]/m to stdout, but output nothing
+        Diff:
+        @@ -1 +1 @@
+        -/["You are in a scary cave.\n", "You walk into sunlight.\n"]/m
+        +""
+      # ./spec/question_3_spec.rb:78:in `set_user_input_and_check_expected_output'
+      # ./spec/question_3_spec.rb:23:in `block (3 levels) in <top (required)>'
+
+  15) Q3. Little adventure move north and south several times, then north twice `puts`es descriptions of both rooms several times, win description
+      Failure/Error:
+        expect { load "questions/question_3.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You are in a scary cave.
+        .*You are in a scary passage.
+        .*You are in a scary cave.
+        .*You are in a sca...n a scary cave.
+        .*You are in a scary passage.
+        .*You are in a scary cave.
+        .*You walk into sunlight./m to stdout, but output nothing
+        Diff:
+        @@ -1,9 +1,2 @@
+        -/You are in a scary cave.
+        -.*You are in a scary passage.
+        -.*You are in a scary cave.
+        -.*You are in a scary passage.
+        -.*You are in a scary cave.
+        -.*You are in a scary passage.
+        -.*You are in a scary cave.
+        -.*You walk into sunlight./m
+        +""
+      # ./spec/question_3_spec.rb:78:in `set_user_input_and_check_expected_output'
+      # ./spec/question_3_spec.rb:55:in `block (3 levels) in <top (required)>'
+
+  16) Q3. Little adventure move north to cave, incorrect command in cave, move north `puts`es cave description, no error, `puts`es win description
+      Failure/Error:
+        expect { load "questions/question_3.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /["You are in a scary cave.\n", "You walk into sunlight.\n"]/m to stdout, but output nothing
+        Diff:
+        @@ -1 +1 @@
+        -/["You are in a scary cave.\n", "You walk into sunlight.\n"]/m
+        +""
+      # ./spec/question_3_spec.rb:78:in `set_user_input_and_check_expected_output'
+      # ./spec/question_3_spec.rb:65:in `block (3 levels) in <top (required)>'
+
+  17) Q4. Big adventure immediately quit `puts`es bye
+      Failure/Error:
+        expect { load "questions/question_4.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /Bye!/m to stdout, but output nothing
+        Diff:
+        @@ -1 +1 @@
+        -/Bye!/m
+        +""
+      # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+      # ./spec/question_4_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  18) Q4. Big adventure look, quit `puts`es hall description, bye
+      Failure/Error:
+        expect { load "questions/question_4.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You are standing in a hall with a marble floor. You see a door.
+        .*Bye!
+        /m to stdout, but output nothing
+        Diff:
+        @@ -1,4 +1,2 @@
+        -/You are standing in a hall with a marble floor. You see a door.
+        -.*Bye!
+        -/m
+        +""
+      # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+      # ./spec/question_4_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  19) Q4. Big adventure look, incorrect command in hall, quit `puts`es hall description, bye
+      Failure/Error:
+        expect { load "questions/question_4.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You are standing in a hall with a marble floor. You see a door.
+        .*Bye!
+        /m to stdout, but output nothing
+        Diff:
+        @@ -1,4 +1,2 @@
+        -/You are standing in a hall with a marble floor. You see a door.
+        -.*Bye!
+        -/m
+        +""
+      # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+      # ./spec/question_4_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  20) Q4. Big adventure north to study, look, quit `puts`es study description, bye
+      Failure/Error:
+        expect { load "questions/question_4.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You are in a warm and cosy study. You see a safe. You see a desk.
+        .*Bye!
+        /m to stdout, but output nothing
+        Diff:
+        @@ -1,4 +1,2 @@
+        -/You are in a warm and cosy study. You see a safe. You see a desk.
+        -.*Bye!
+        -/m
+        +""
+      # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+      # ./spec/question_4_spec.rb:48:in `block (3 levels) in <top (required)>'
+
+  21) Q4. Big adventure north to study, look, incorrect command, quit `puts`es study description, bye
+      Failure/Error:
+        expect { load "questions/question_4.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You are in a warm and cosy study. You see a safe. You see a desk.
+        .*Bye!
+        /m to stdout, but output nothing
+        Diff:
+        @@ -1,4 +1,2 @@
+        -/You are in a warm and cosy study. You see a safe. You see a desk.
+        -.*Bye!
+        -/m
+        +""
+      # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+      # ./spec/question_4_spec.rb:61:in `block (3 levels) in <top (required)>'
+
+  22) Q4. Big adventure go between hall and study many times, look each time, quit `puts`es descriptions of both rooms several times, bye
+      Failure/Error:
+        expect { load "questions/question_4.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You are standing in a hall with a marble floor. You see a door.
+        .*You are in a warm and cosy study. ... a safe. You see a desk.
+        .*You are standing in a hall with a marble floor. You see a door.
+        .*Bye!
+        /m to stdout, but output nothing
+        Diff:
+        @@ -1,8 +1,2 @@
+        -/You are standing in a hall with a marble floor. You see a door.
+        -.*You are in a warm and cosy study. You see a safe. You see a desk.
+        -.*You are standing in a hall with a marble floor. You see a door.
+        -.*You are in a warm and cosy study. You see a safe. You see a desk.
+        -.*You are standing in a hall with a marble floor. You see a door.
+        -.*Bye!
+        -/m
+        +""
+      # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+      # ./spec/question_4_spec.rb:92:in `block (3 levels) in <top (required)>'
+
+  23) Q4. Big adventure north to study, look at desk, quit `puts`es desk description, bye
+      Failure/Error:
+        expect { load "questions/question_4.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You see a piece of paper that reads, The combination is 2451.
+        .*Bye!
+        /m to stdout, but output nothing
+        Diff:
+        @@ -1,4 +1,2 @@
+        -/You see a piece of paper that reads, The combination is 2451.
+        -.*Bye!
+        -/m
+        +""
+      # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+      # ./spec/question_4_spec.rb:105:in `block (3 levels) in <top (required)>'
+
+  24) Q4. Big adventure north to study, enter combination `puts`es win description
+      Failure/Error:
+        expect { load "questions/question_4.rb" }
+          .to output(/#{expected_output}/m).to_stdout
+
+        expected block to output /You see some diamonds in the safe, pick them up and make your escape
+        /m to stdout, but output nothing
+        Diff:
+        @@ -1,3 +1,2 @@
+        -/You see some diamonds in the safe, pick them up and make your escape
+        -/m
+        +""
+      # ./spec/question_4_spec.rb:129:in `set_user_input_and_check_expected_output'
+      # ./spec/question_4_spec.rb:116:in `block (3 levels) in <top (required)>'
+
+Finished in 5.02 seconds (files took 0.09142 seconds to load)
+28 examples, 24 failures
+
+Failed examples:
+
+rspec ./spec/question_1_spec.rb:9 # Q1. Add up many numbers user enters just `stop` `puts`es `0`
+rspec ./spec/question_1_spec.rb:18 # Q1. Add up many numbers user enters `3` and `stop` `puts`es the total (3)
+rspec ./spec/question_1_spec.rb:27 # Q1. Add up many numbers user enters `5`, `4`, `3`, `2`, `1` and `stop` `puts`es the total (15)
+rspec ./spec/question_2_spec.rb:8 # Q2. Rock, paper, scissors player 1: rock, player 2: rock `puts`es It's a draw
+rspec ./spec/question_2_spec.rb:17 # Q2. Rock, paper, scissors player 1: paper, player 2: paper `puts`es It's a draw
+rspec ./spec/question_2_spec.rb:26 # Q2. Rock, paper, scissors player 1: scissors, player 2: scissors `puts`es It's a draw
+rspec ./spec/question_2_spec.rb:35 # Q2. Rock, paper, scissors player 1: rock, player 2: scissors `puts`es Player 1 wins
+rspec ./spec/question_2_spec.rb:44 # Q2. Rock, paper, scissors player 1: paper, player 2: rock `puts`es Player 1 wins
+rspec ./spec/question_2_spec.rb:53 # Q2. Rock, paper, scissors player 1: scissors, player 2: paper `puts`es Player 1 wins
+rspec ./spec/question_2_spec.rb:62 # Q2. Rock, paper, scissors player 1: rock, player 2: paper `puts`es Player 2 wins
+rspec ./spec/question_2_spec.rb:71 # Q2. Rock, paper, scissors player 1: paper, player 2: scissors `puts`es Player 2 wins
+rspec ./spec/question_2_spec.rb:80 # Q2. Rock, paper, scissors player 1: scissors, player 2: rock `puts`es Player 2 wins
+rspec ./spec/question_3_spec.rb:12 # Q3. Little adventure move north to cave, move north to win `puts`es cave description, win description
+rspec ./spec/question_3_spec.rb:22 # Q3. Little adventure incorrect command in passage, move north to cave, move north no error, `puts`es cave description, win description
+rspec ./spec/question_3_spec.rb:54 # Q3. Little adventure move north and south several times, then north twice `puts`es descriptions of both rooms several times, win description
+rspec ./spec/question_3_spec.rb:64 # Q3. Little adventure move north to cave, incorrect command in cave, move north `puts`es cave description, no error, `puts`es win description
+rspec ./spec/question_4_spec.rb:8 # Q4. Big adventure immediately quit `puts`es bye
+rspec ./spec/question_4_spec.rb:21 # Q4. Big adventure look, quit `puts`es hall description, bye
+rspec ./spec/question_4_spec.rb:34 # Q4. Big adventure look, incorrect command in hall, quit `puts`es hall description, bye
+rspec ./spec/question_4_spec.rb:47 # Q4. Big adventure north to study, look, quit `puts`es study description, bye
+rspec ./spec/question_4_spec.rb:60 # Q4. Big adventure north to study, look, incorrect command, quit `puts`es study description, bye
+rspec ./spec/question_4_spec.rb:91 # Q4. Big adventure go between hall and study many times, look each time, quit `puts`es descriptions of both rooms several times, bye
+rspec ./spec/question_4_spec.rb:104 # Q4. Big adventure north to study, look at desk, quit `puts`es desk description, bye
+rspec ./spec/question_4_spec.rb:115 # Q4. Big adventure north to study, enter combination `puts`es win description
+
