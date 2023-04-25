@@ -25,4 +25,23 @@
 # 
 # * Note: To pass the tests, you'll need to `puts` exactly what's
 #   expected. Watch out for stray punctuation, capital letters, etc.
+current_room = "passage"
 
+loop do
+  if current_room == "passage"
+    player = gets.chomp.downcase
+    if player == "north"
+      puts "You are in a scary cave."
+      current_room = "cave"
+    end
+  elsif current_room == "cave"
+    player = gets.chomp.downcase
+    if player == "south"
+      puts "You are in a scary passage."
+      current_room = "passage"
+    elsif player == "north"
+      puts "You walk into sunlight."
+      break
+    end
+  end
+end

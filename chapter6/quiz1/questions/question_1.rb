@@ -27,3 +27,12 @@
 # * Note: You can assume that the user will always enter either an
 #   integer or `stop`.
 
+total = 0
+loop do
+  puts "Give me a number"
+  user = gets.chomp
+  break if user == "stop"
+  
+  total += user.to_i
+end
+puts total

@@ -20,3 +20,18 @@
 # * Note: You can assume the players will only ever input `rock`,
 #   `paper` or `scissors`.
 
+puts "Player 1 make your move. You can input rock, paper or scissors?"
+player1_move = gets.chomp.downcase
+
+puts "Player 2 make your move. You can input rock, paper or scissors?"
+player2_move = gets.chomp.downcase
+
+if player1_move == player2_move
+  puts "It's a draw!"
+elsif (player1_move == "rock" && player2_move == "scissors") ||
+  (player1_move == "scissors" && player2_move == "paper") ||
+  (player1_move == "paper" && player2_move == "rock")
+  puts "Player 1 wins!"
+else 
+  puts "Player 2 wins!"
+end
