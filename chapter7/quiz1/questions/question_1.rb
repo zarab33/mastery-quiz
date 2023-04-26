@@ -19,3 +19,10 @@
 # * Note: You can assume the user will only enter integers separated
 #   by commas with no spaces.
 
+puts "Enter a list of numbers, seperated by commas"
+user = gets.chomp
+number_graph = user.split(",")
+
+number_graph.each do |num|
+  puts "-" * num.to_i
+end

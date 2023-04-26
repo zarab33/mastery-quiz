@@ -64,3 +64,31 @@
 
 river = "-----,--C--,CC-CC,CC-CC"
 
+player_position = 2
+
+while true
+ 
+  if river[player_position] == "C"
+    puts "You were eaten."
+    break
+  end
+  
+
+  player = river.dup
+  player[player_position] = "P"
+  puts player
+ 
+  puts "Type left, right or neither"
+  choice = gets.chomp
+  
+  if choice == "left"
+    player_position -= 1
+  elsif choice == "right"
+    player_position += 1
+  end
+  
+  if player_position >= river.length
+    puts "You survived!"
+    break
+  end
+end

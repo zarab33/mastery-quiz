@@ -51,3 +51,33 @@
 #   input integers for group numbers that exist when they are asked
 #   for the number of a group to print out.
 
+groups = []
+puts "Enter number of groups"
+num_groups = gets.chomp.to_i
+num_groups.times { groups.push(Array.new) }
+
+sub_group = 0
+while true
+  puts "Enter a name"
+  name = gets.chomp
+  break if name == "stop"
+  
+  groups[sub_group].push(name)
+  sub_group += 1
+  sub_group = 0 if sub_group > groups.length - 1
+end
+
+while true
+  puts "Enter the number of a group to print out"
+  input = gets.chomp
+  break if input == "stop"
+
+  group_num = input.to_i - 1
+  if groups[group_num]
+    puts groups[group_num].join(", ")
+  else
+    puts "Group does not exist"
+  end
+end
+
+print groups
