@@ -1,0 +1,168 @@
+........FFFFF
+
+Failures:
+
+  1) Q3. Crocodile river has acceptable code quality
+     Failure/Error: expect(code_quality.acceptable?).to(eq(true), code_quality.problems)
+
+       Inspecting 1 file
+       C
+
+       Offenses:
+
+       questions/question_3.rb:68:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected.
+       questions/question_3.rb:76:1: C: [Correctable] Layout/IndentationConsistency: Inconsistent indentation detected.
+       puts river.join("\n")
+       ^^^^^^^^^^^^^^^^^^^^^
+
+       1 file inspected, 2 offenses detected, 2 offenses autocorrectable
+
+       Diff:
+       @@ -1 +1 @@
+       -true
+       +false
+     # ./spec/question_3_spec.rb:99:in `block (2 levels) in <top (required)>'
+
+  2) Q3. Crocodile river player inputs `neither` outputs river before first turn, then You were eaten!
+     Failure/Error:
+       expect { load "questions/question_3.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /--P--
+       --C--
+       CC-CC
+       CC-CC
+       .*You were eaten.$/m to stdout, but output "You were eaten.\n"
+       Diff:
+       @@ -1,6 +1,2 @@
+       -/--P--
+       ---C--
+       -CC-CC
+       -CC-CC
+       -.*You were eaten.$/m
+       +You were eaten.
+     # ./spec/question_3_spec.rb:106:in `set_user_input_and_check_expected_output'
+     # ./spec/question_3_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  3) Q3. Crocodile river player inputs `right, neither` outputs river at each turn, then You were eaten!
+     Failure/Error:
+       expect { load "questions/question_3.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /--P--
+       --C--
+       CC-CC
+       CC-CC
+       .*-----
+       --CP-
+       CC-CC
+       CC-CC
+       .*You were eaten.$/m to stdout, but output "You were eaten.\n"
+       Diff:
+       @@ -1,10 +1,2 @@
+       -/--P--
+       ---C--
+       -CC-CC
+       -CC-CC
+       -.*-----
+       ---CP-
+       -CC-CC
+       -CC-CC
+       -.*You were eaten.$/m
+       +You were eaten.
+     # ./spec/question_3_spec.rb:106:in `set_user_input_and_check_expected_output'
+     # ./spec/question_3_spec.rb:36:in `block (3 levels) in <top (required)>'
+
+  4) Q3. Crocodile river player inputs `right, left, right` outputs river at each turn, then You were eaten!
+     Failure/Error:
+       expect { load "questions/question_3.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /--P--
+       --C--
+       CC-CC
+       CC-CC
+       .*-----
+       --CP-
+       CC-CC
+       CC-CC
+       .*-----
+       --C--
+       CCPCC
+       CC-CC
+       .*You were eaten.$/m to stdout, but output "You were eaten.\n"
+       Diff:
+       @@ -1,14 +1,2 @@
+       -/--P--
+       ---C--
+       -CC-CC
+       -CC-CC
+       -.*-----
+       ---CP-
+       -CC-CC
+       -CC-CC
+       -.*-----
+       ---C--
+       -CCPCC
+       -CC-CC
+       -.*You were eaten.$/m
+       +You were eaten.
+     # ./spec/question_3_spec.rb:106:in `set_user_input_and_check_expected_output'
+     # ./spec/question_3_spec.rb:60:in `block (3 levels) in <top (required)>'
+
+  5) Q3. Crocodile river player moves left, right, neither, neither outputs river at each turn, then You survived!
+     Failure/Error:
+       expect { load "questions/question_3.rb" }
+         .to output(/#{expected_output}/m).to_stdout
+
+       expected block to output /--P--
+       --C--
+       CC-CC
+       CC-CC
+       .*-----
+       -PC--
+       CC-CC
+       CC-CC
+       .*-----
+       --C--
+       CCPCC
+       CC-CC
+       .*-----
+       --C--
+       CC-CC
+       CCPCC
+       .*You survived!$/m to stdout, but output "You were eaten.\n"
+       Diff:
+       @@ -1,18 +1,2 @@
+       -/--P--
+       ---C--
+       -CC-CC
+       -CC-CC
+       -.*-----
+       --PC--
+       -CC-CC
+       -CC-CC
+       -.*-----
+       ---C--
+       -CCPCC
+       -CC-CC
+       -.*-----
+       ---C--
+       -CC-CC
+       -CCPCC
+       -.*You survived!$/m
+       +You were eaten.
+     # ./spec/question_3_spec.rb:106:in `set_user_input_and_check_expected_output'
+     # ./spec/question_3_spec.rb:91:in `block (3 levels) in <top (required)>'
+
+Finished in 3.52 seconds (files took 0.13154 seconds to load)
+13 examples, 5 failures
+
+Failed examples:
+
+rspec ./spec/question_3_spec.rb:97 # Q3. Crocodile river has acceptable code quality
+rspec ./spec/question_3_spec.rb:15 # Q3. Crocodile river player inputs `neither` outputs river before first turn, then You were eaten!
+rspec ./spec/question_3_spec.rb:35 # Q3. Crocodile river player inputs `right, neither` outputs river at each turn, then You were eaten!
+rspec ./spec/question_3_spec.rb:59 # Q3. Crocodile river player inputs `right, left, right` outputs river at each turn, then You were eaten!
+rspec ./spec/question_3_spec.rb:90 # Q3. Crocodile river player moves left, right, neither, neither outputs river at each turn, then You survived!
+
