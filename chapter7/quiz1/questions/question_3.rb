@@ -62,25 +62,26 @@
 #   You survived!
 #   ```
 
-river = "-----,--C--,CC-CC,CC-CC"
-river.split(",")
-
+river = "-----,--C--,CC-CC,CC-CC".split(",")
 player_position = 2
 
+
 while true
- 
-  if river[player_position] == "C"
+  if river[player_position][0] == "C"
     puts "You were eaten."
     break
   end
-  
 
-  player = river.dup
-  player[player_position] = "P"
-  puts player
- 
+  river[player_position][1] = "P"
+puts river.join("\n")
+
+  if player_position == river.length - 1
+    puts "You survived!"
+    break
+  end
+
   puts "Type left, right or neither"
-  choice = gets.chomp
+  choice = gets.chomp.downcase
   
   if choice == "left"
     player_position -= 1
@@ -88,8 +89,5 @@ while true
     player_position += 1
   end
   
-  if player_position >= river.length
-    puts "You survived!"
-    break
-  end
 end
+
