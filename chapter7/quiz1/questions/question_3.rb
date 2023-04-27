@@ -63,6 +63,7 @@
 #   ```
 
 river = "-----,--C--,CC-CC,CC-CC"
+river.split(",")
 
 player_position = 2
 
