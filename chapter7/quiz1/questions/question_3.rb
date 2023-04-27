@@ -61,33 +61,85 @@
 #   neither
 #   You survived!
 #   ```
-
-river = "-----,--C--,CC-CC,CC-CC".split(",")
-player_position = 2
-
-
-while true
-  if river[player_position][0] == "C"
+river = "-----,--C--,CC-CC,CC-CC"
+river_section = river.split(",").to_a
+quit = 0
+puts "--P--"
+puts river_section[1]
+puts river_section[2]
+puts river_section[3]
+puts "Type left, right or neither"
+user = gets.chomp
+while true do
+  if user == "neither"
     puts "You were eaten."
+    quit = 1
     break
   end
-
-  river[player_position][1] = "P"
-puts river.join("\n")
-
-  if player_position == river.length - 1
-    puts "You survived!"
-    break
+  if user == "left"
+    puts river_section[0]
+    puts "-PC--"
+    puts river_section[2]
+    puts river_section[3]
   end
-
+  if user == "right"
+    puts river_section[0]
+    puts "--CP-"
+    puts river_section[2]
+    puts river_section[3]
+  end
+  if user == "left"
+    puts "Type left, right or neither"
+    user = gets.chomp
+    if user == "right"
+      puts river_section[0]
+      puts river_section[1]
+      puts "CCPCC"
+      puts river_section[3]
+    elsif user == "left" or "neither"
+      puts "You were eaten."
+      quit += 1
+      break
+    end
+  elsif user == "right"
+    puts "Type left, right or neither"
+    user = gets.chomp
+    if user == "left"
+      puts river_section[0]
+      puts river_section[1]
+      puts "CCPCC"
+      puts river_section[3]
+    elsif user == "right" or "neither"
+      puts "You were eaten."
+      quit += 1
+      break
+    end
+  end
   puts "Type left, right or neither"
-  choice = gets.chomp.downcase
-  
-  if choice == "left"
-    player_position -= 1
-  elsif choice == "right"
-    player_position += 1
+  user = gets.chomp
+  if user == "neither"
+    puts river_section[0]
+    puts river_section[1]
+    puts river_section[2]
+    puts "CCPCC"
+  elsif user == "left" or "right"
+    puts "You were eaten."
+    quit += 1
+    break
   end
-  
+  puts "Type left, right or neither"
+  user = gets.chomp
+  if user == "neither"
+    puts "You survived!"
+    quit += 1
+    break
+  end
+  if user == "left" or "right"
+    puts "You were eaten."
+    quit += 1
+    break
+  end
+  if quit == 1
+    break
+  end
 end
-
