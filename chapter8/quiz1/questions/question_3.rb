@@ -36,3 +36,21 @@ people = [
   { "name" => "Will", "sport" => "cycling", "fruit" => "blackberry" }
 ]
 
+puts "Enter what category to group people by they favourite thing fruit or sport?:"
+category = gets.chomp.downcase
+
+favourite_things = {}
+
+people.each do |person|
+  favourite = person[category]
+  if favourite_things[favourite]
+    favourite_things[favourite].push(person["name"])
+  else
+    favourite_things[favourite] = [person["name"]]
+  end
+end
+
+favourite_things.each do |favourite, names|
+  puts favourite
+  puts names.join("\n")
+end

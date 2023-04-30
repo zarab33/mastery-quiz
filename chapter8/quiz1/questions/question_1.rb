@@ -17,4 +17,31 @@
 #   contains letters and blanks.  You can assume the word will be in
 #   uppercase.
 
+points = {
 
+0 => "",
+1 => ["E", "A", "I", "O", "N", "R", "T", "L", "S", "U"],
+2 => ["D", "G"],
+3 => ["B", "C", "M", "P"],
+4 => ["F", "H", "V", "W", "Y"],
+5 => ["K"],
+8 => ["J", "X"],
+10 => ["Q", "Z"]
+}
+scrabble_points_calculator = {}
+puts "Enter a word"
+user = gets.chomp.upcase
+user.chars.each do |letter|
+  points.each do |num, letters|
+    if letters.include?(letter)
+      if scrabble_points_calculator[letter]
+        scrabble_points_calculator[letter] += num
+      else
+        scrabble_points_calculator[letter] = num
+        break
+      end
+    end
+  end
+end
+
+puts scrabble_points_calculator.values.sum
