@@ -51,6 +51,7 @@
 #   methods.
 
 # You don't need to change this method!
+
 def random_card
   cards = ["two", "three", "four", "five", "six", "seven",
            "eight", "nine", "ten",
@@ -59,3 +60,64 @@ def random_card
   cards[rand(13)]
 end
 
+def move
+  loop do
+    puts "Welcome to solo blackjack would you like to Hit or Stick?"
+    player_move = gets.chomp.downcase
+    if player_move == "hit" || player_move == "stick"
+      return player_move
+    else
+      puts "Please enter Hit or Stick"
+    end
+  end
+end
+
+def score(cards)
+
+  draw = {
+    "two" => 2,
+    "three" => 3,
+    "four" => 4,
+    "five" => 5,
+    "six" => 6,
+    "seven" => 7,
+    "eight" => 8,
+    "nine" => 9,
+    "ten" => 10,
+    "jack" => 10,
+    "queen" => 10,
+    "king" => 10,
+    "ace" => 11
+  }
+  
+  total_score = 0
+  cards.each do |suit|
+    total_score += draw[suit]
+  end
+  total_score
+end
+
+def run_game
+  cards = []
+  total_score = 0
+  loop do
+    card = random_card
+    if move == "hit"
+      cards << card
+      total_score = score(cards)
+      puts "Score so far: #{total_score}"
+      if total_score > 21
+        puts "You busted with: #{total_score}"
+        break
+      end
+    else
+      total_score = score(cards)
+      puts "You scored: #{total_score}"
+      break
+    end
+  end
+
+  if total_score <= 21
+    puts "You scored: #{total_score}"
+  end
+end
